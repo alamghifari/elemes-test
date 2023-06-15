@@ -1,28 +1,51 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <v-app>
+        <HeaderSection />
+        <v-main>
+            <BannerSection />
+        </v-main>
+    </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderSection from './components/HeaderSection';
+import BannerSection from './components/BannerSection';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+    name: 'App',
 
+    components: {
+        HeaderSection,
+        BannerSection,
+    },
+
+    data: () => ({
+      //
+    }),
+
+    mounted() {
+
+    },
+
+    computed: {
+        isDesktop() {
+            return this.$vuetify.breakpoint.mdAndUp;
+        },
+        isMobile() {
+            return this.$vuetify.breakpoint.xs;
+        },
+        isTablet() {
+            return this.$vuetify.breakpoint.sm && !this.$vuetify.breakpoint.mdAndUp;
+        },
+    },
+};
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.normal {
+    text-transform: none;
+}
+.banner-text__tagline {
+    font-size: 64px;
+    color: #8BAC3E;
 }
 </style>
