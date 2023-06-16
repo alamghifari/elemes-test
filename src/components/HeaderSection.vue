@@ -2,6 +2,7 @@
     <v-app-bar
         app
         flat
+        height="90"
         color="white"
         class="px-lg-16 px-md-3 px-0"
     >
@@ -21,7 +22,7 @@
         </div>
 
         <v-spacer></v-spacer>
-        <div class="hidden-sm-and-down" style="background: red;">
+        <div class="hidden-sm-and-down">
             <v-btn text class="normal">
                 Home
             </v-btn>

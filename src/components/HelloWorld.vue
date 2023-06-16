@@ -25,7 +25,7 @@
         </p>
       </v-col>
 
-      <v-col
+      <!-- <v-col
         class="mb-5"
         cols="12"
       >
@@ -44,9 +44,9 @@
             {{ next.text }}
           </a>
         </v-row>
-      </v-col>
+      </v-col> -->
 
-      <v-col
+      <!-- <v-col
         class="mb-5"
         cols="12"
       >
@@ -65,9 +65,9 @@
             {{ link.text }}
           </a>
         </v-row>
-      </v-col>
+      </v-col> -->
 
-      <v-col
+      <!-- <v-col
         class="mb-5"
         cols="12"
       >
@@ -86,7 +86,7 @@
             {{ eco.text }}
           </a>
         </v-row>
-      </v-col>
+      </v-col> -->
     </v-row>
   </v-container>
 </template>
