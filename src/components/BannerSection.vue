@@ -37,7 +37,7 @@
         </v-col>
         <v-col cols="12" md="6">
             <v-card
-                class="d-flex justify-center mb-6 pl-16"
+                class="d-flex justify-end mb-6"
                 flat
             >
                 <div 
@@ -46,7 +46,7 @@
                         background:#f7f7f7;
                         width: 518x;
                     " 
-                    class="px-10">
+                    class="px-10 mr-14">
                     <v-img
                         :src="require('../assets/salad.png')"
                         contain
