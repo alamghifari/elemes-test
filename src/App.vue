@@ -6,6 +6,7 @@
             <CategorySection />
             <TrendingSection />
         </v-main>
+        <FooterSection />
     </v-app>
 </template>
 
@@ -14,6 +15,7 @@ import HeaderSection from './components/HeaderSection';
 import BannerSection from './components/BannerSection';
 import CategorySection from './components/CategorySection';
 import TrendingSection from './components/TrendingSection';
+import FooterSection from './components/FooterSection';
 
 export default {
     name: 'App',
@@ -22,7 +24,8 @@ export default {
         HeaderSection,
         BannerSection,
         CategorySection,
-        TrendingSection
+        TrendingSection,
+        FooterSection
     },
 
     data: () => ({
@@ -83,5 +86,15 @@ export default {
         position: absolute;
         bottom: -40px;
         right: 150px;
+    }
+    .banner-small-image{
+        position: absolute;
+        bottom: -200px;
+        right: 310px;
+    }
+    @media only screen and (max-width: 450px) {
+        .banner-text__tagline {
+            font-size: 48px;
+        }
     }
 </style>
